@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة التحسين اليومية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">تغيير المظهر 🌓</button>
+    
+    <div class="container">
+        <h1>قائمة التحسين اليومية</h1>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="overall-progress"></div>
+            </div>
+            <div class="progress-text" id="progress-text"></div>
+        </div>
+
+        <div class="add-item-form">
+            <select id="category-select">
+                <option value="تنظيم الروتين اليومي">تنظيم الروتين اليومي</option>
+                <option value="الصحة البدنية">الصحة البدنية</option>
+                <option value="الجانب الديني">الجانب الديني</option>
+                <option value="التطوير الشخصي">التطوير الشخصي</option>
+                <option value="العلاقات الاجتماعية">العلاقات الاجتماعية</option>
+                <option value="العمل والإنتاجية">العمل والإنتاجية</option>
+                <option value="التعليم والتعلم">التعليم والتعلم</option>
+            </select>
+            <input type="text" id="new-item-input" placeholder="أضف مهمة جديدة...">
+            <button onclick="addNewItem()">إضافة</button>
+        </div>
+
+        <div id="checklist-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
